@@ -18,7 +18,7 @@ but it does save a lot of typing.
 ## Installation
 
 * git clone this repo
-* build the container with ./build.sh or `docker build -t alexellis2/learnyounode .`
+* build the container with ./build.sh or `docker build -t alexellis2/learnyounodedocker .`
 * type in docker images and you will see *alexellis2/learnyounode* available in your 
 library
 
