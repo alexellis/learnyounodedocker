@@ -19,7 +19,7 @@ but it does save a lot of typing.
 
 * git clone this repo
 * build the container with ./build.sh or `docker build -t alexellis2/learnyounodedocker .`
-* type in docker images and you will see *alexellis2/learnyounode* available in your 
+* type in docker images and you will see *alexellis2/learnyounodedocker* available in your 
 library
 
 ## Running the course
