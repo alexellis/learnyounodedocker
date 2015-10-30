@@ -1,0 +1,41 @@
+--- learnyounodedocker/minimal_update.sh	1970-01-01 00:00:00.000000000 +0000
++++ learnyounodedockerpi/minimal_update.sh	2015-10-30 19:05:51.222325371 +0000
+@@ -0,0 +1,37 @@
++#/bin/bash
++
++# packages to ignore for space savings
++PKGIGNORE=(
++    cryptsetup
++    device-mapper
++    dhcpcd
++    groff
++    iproute2
++    jfsutils
++    linux
++    lvm2
++    man-db
++    man-pages
++    mdadm
++    nano
++    netctl
++    openresolv
++    pciutils
++    pcmciautils
++    reiserfsprogs
++    s-nail
++    #systemd-sysvcompat
++    usbutils
++    xfsprogs
++)
++IFS=','
++PKGIGNORE="${PKGIGNORE[*]}"
++unset IFS
++
++echo $PKGIGNORE
++pacman -Sy
++pacman -R --noconfirm openssh nano vi which
++pacman -Su --noconfirm --noprogressbar nodejs npm --ignore $PKGIGNORE
++
++rm -rf /var/cache/pacman/pkg/*
++rm -rf /usr/share/{man,doc}
+
