@@ -1,0 +1,26 @@
+--- learnyounodedocker/Dockerfile	2015-10-30 18:40:17.227421922 +0000
++++ learnyounodedockerpi/Dockerfile	2015-10-30 18:47:49.861746142 +0000
+@@ -1,20 +1,9 @@
+-FROM ubuntu:latest
++FROM armv7/armhf-archlinux
+ MAINTAINER alexellis2@gmail.com
+ USER root
+ 
+-# get wget/curl ready for pulling latest nodejs
+-# openssl to support secure http
+-
+-RUN apt-get -qyy update && apt-get -qqy install\
+- wget curl openssl
+-
+-RUN wget -qO- https://deb.nodesource.com/setup_4.x | bash -
+-
+-RUN rm -rf /var/lib/apt/lists/* 
+-
+-# Install latest nodejs
+-RUN apt-get -y update && apt-get -qy install\
+- nodejs
++ADD minimal_update.sh /minimal_update.sh
++RUN /minimal_update.sh
+ 
+ # install app
+ RUN npm install learnyounode -g

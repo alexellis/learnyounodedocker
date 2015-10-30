@@ -38,4 +38,3 @@
 +
 +rm -rf /var/cache/pacman/pkg/*
 +rm -rf /usr/share/{man,doc}
-
