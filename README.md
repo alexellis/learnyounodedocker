@@ -15,6 +15,10 @@ having to interact with the container through a bash shell or ssh. To enable the
 into the container I have put together a quick bash script used to launch the container. The script is not essential
 but it does save a lot of typing.
 
+## TL;DR
+
+[http://quad.ae24.space/learnyounode-in-a-docker-container/](Blog entry)
+
 ## Installation
 
 * git clone this repo
