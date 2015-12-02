@@ -21,7 +21,7 @@ but it does save a lot of typing.
 
 ### Changes
 
-Altered image to use node:0.12.8 instead of ubuntu:latest, means less maintenance for node/npm installation.
+Switched to Alpine Linux, for a much smaller image
 
 ## Installation
 
