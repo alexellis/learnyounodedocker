@@ -19,6 +19,10 @@ but it does save a lot of typing.
 
 [http://quad.ae24.space/learnyounode-in-a-docker-container/](Blog entry)
 
+### Changes
+
+Altered image to use node:0.12.8 instead of ubuntu:latest, means less maintenance for node/npm installation.
+
 ## Installation
 
 * git clone this repo
@@ -40,3 +44,4 @@ library
 `exercises` then type: 
 
 `./learnyounode.sh "HELLO WORLD" "ex1.js"`
+

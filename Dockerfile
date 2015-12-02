@@ -1,20 +1,6 @@
-FROM ubuntu:latest
+FROM node:0.12
 MAINTAINER alexellis2@gmail.com
 USER root
-
-# get wget/curl ready for pulling latest nodejs
-# openssl to support secure http
-
-RUN apt-get -qyy update && apt-get -qqy install\
- wget curl openssl
-
-RUN wget -qO- https://deb.nodesource.com/setup_4.x | bash -
-
-RUN rm -rf /var/lib/apt/lists/* 
-
-# Install latest nodejs
-RUN apt-get -y update && apt-get -qy install\
- nodejs
 
 # install app
 RUN npm install learnyounode -g

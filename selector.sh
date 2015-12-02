@@ -1,6 +1,6 @@
 #/bin/bash
 
-learn=/usr/bin/learnyounode
+learn=/usr/local/bin/learnyounode
 mkdir -p ~/.config/learnyounode
 
 if [ -z "$1" ]
