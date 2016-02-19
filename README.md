@@ -1,5 +1,7 @@
 # Dockerized learnyounode
 
+[![Build Status](https://travis-ci.org/alexellis/learnyounodedocker.svg?branch=master)](https://travis-ci.org/alexellis/learnyounodedocker)
+
 ## Intro
 
 learnyounode is an interactive course to learn the basics of nodejs
