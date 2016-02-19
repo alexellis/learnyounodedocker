@@ -1,0 +1,10 @@
+sudo: required
+
+services:
+  - docker
+before_install:
+  - ./build.sh
+script:
+  - learnyounode.sh
+  - learnyounode.sh "HELLO WORLD"
+
