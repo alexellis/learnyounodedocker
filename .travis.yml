@@ -1,3 +1,5 @@
+language: bash
+
 sudo: required
 
 services:
@@ -5,6 +7,6 @@ services:
 before_install:
   - ./build.sh
 script:
-  - learnyounode.sh
-  - learnyounode.sh "HELLO WORLD"
+  - bash learnyounode.sh
+  - bash learnyounode.sh "HELLO WORLD"
 
