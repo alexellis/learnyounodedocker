@@ -1,4 +1,4 @@
-FROM mhart/alpine-node:0.12
+FROM mhart/alpine-node:4.2
 
 MAINTAINER alexellis2@gmail.com
 USER root
