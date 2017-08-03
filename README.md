@@ -12,7 +12,7 @@ This repo is my attempt to access everything needed to do the full course withou
 
 ## TL;DR
 
-[http://blog.alexellis.io/learnyounode-in-a-docker-container/](Blog entry)
+[Blog post on this project](http://blog.alexellis.io/learnyounode-in-a-docker-container/)
 
 ### Changes
 
